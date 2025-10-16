@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align item</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-color: aquamarine;
+            padding: 10px 0;
+            align-items: center;
+        }
+        .box{
+            width: 100px;
+            height: 500px;
+            background-color: darkblue;
+        }
+        .demo{
+            height: 200px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box demo"></div>
+        <div class="box"></div>
+
+</body>
+</html>
