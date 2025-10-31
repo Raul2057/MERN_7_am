@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Units Demo</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+  h2 {
+    margin-top: 30px;
+    color: darkblue;
+  }
+
+  .box {
+    margin: 10px 0;
+    background-color: lightgreen;
+    text-align: center;
+    border: 1px solid black;
+  }
+
+  .px-box {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .percent-box {
+    width: 50%;
+    height: 50px;
+    font-size: 100%;
+  }
+
+  .em-box {
+    width: 20em;
+    height: 3em;
+    font-size: 1.5em;
+  }
+
+  .rem-box {
+    width: 20rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+
+  .vw-box {
+    width: 50vw;
+    height: 10vh;
+    font-size: 2vw;
+  }
+
+  .inch-box {
+    width: 2in;
+    height: 1in;
+    font-size: 12pt;
+  }
+</style>
+</head>
+<body>
+
+<h1>CSS Units Comparison</h1>
+
+<h2>Pixels (px)</h2>
+<div class="box px-box">200px wide</div>
+
+<h2>Percentage (%)</h2>
+<div class="box percent-box">50% of parent width</div>
+
+<h2>em (relative to parent font size)</h2>
+<div class="box em-box">20em wide</div>
+
+<h2>rem (relative to root font size)</h2>
+<div class="box rem-box">20rem wide</div>
+
+<h2>Viewport units (vw, vh)</h2>
+<div class="box vw-box">50vw × 10vh</div>
+
+<h2>Inches (in, pt)</h2>
+<div class="box inch-box">2in wide, 12pt font</div>
+
+</body>
+</html>
