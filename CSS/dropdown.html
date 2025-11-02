@@ -27,17 +27,53 @@
             height: 100%;
             border-radius: 50%;
         }
+        nav ul{
+            display: flex;
+            list-style-type: none;
+        }
+        li{
+            display: inline-block;
+            padding: 20px;
+        }
+        li:hover{
+            background-color: brown;
+        }
+        li a{
+            text-decoration: none;
+            color: blue;
+        }
+        .dropdown{
+            display: none;
+            position: absolute;
+            background-color: aqua;
+            top: 50px;
+            right: 280px;
+        }
+        .dropdown li{
+            display: block;
+            color:blueviolet;
+        }
+        nav ul li:hover .dropdown{
+            display: block;
+        }
     </style>
 </head>
 <body>
     <nav>
         <div class="logo">
-            <img src="" alt="logo">
+            <img src="img/laptop.jpg" alt="logo">
         </div>
         <input type="search" name="search" id="search">
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Product</a></li>
+            <li><a href="#">Product</a>
+                <ul class="dropdown">
+                    <li><a href="#">Laptop</a></li>
+                    <li><a href="#">Laptop</a></li>
+                    <li><a href="#">Laptop</a></li>
+                    <li><a href="#">Laptop</a></li>
+                </ul>
+            </li>
             <li><a href="#">Category</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">About us</a></li>
