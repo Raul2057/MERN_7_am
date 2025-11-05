@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>responsive webpages</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+       <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         *{
             margin: 0;
@@ -42,7 +46,7 @@
         nav ul li a:hover{
             text-decoration:underline ;
         }
-        .card{
+        .cards{
             display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
@@ -50,7 +54,7 @@
         .box{
             width: 22%;
             height: 300px;
-            background-color: deepskyblue;
+            background-color: aqua;
             margin: 10px 0;
         }
         .mobileicon{
@@ -62,6 +66,18 @@
             }
             .mobileicon{
                 display: block;
+                font-size: 30px;
+                color: aliceblue;
+            }
+            .box{
+                width: 95%;
+                height: 200px;
+            }
+        }
+        @media screen and (min-width:576px) and (max-width:992px) {
+            .box{
+                width: 46%;
+                height: 300px;
             }
         }
     </style>
@@ -93,7 +109,7 @@
         </ul>
     </nav>
     <main>
-        <section class="card">
+        <section class="cards">
             <div class="box"></div>
             <div class="box"></div>
             <div class="box"></div>
