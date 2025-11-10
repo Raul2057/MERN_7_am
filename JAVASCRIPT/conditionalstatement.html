@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statement</title>
+</head>
+<body>
+    <script>
+        // if statement
+        // if else
+        // else if
+        // nested if else 
+
+        // let age = parseInt(prompt("Enter a age: "))
+        // if (age<18){
+        //     document.write("You are not eligible for driving license")
+        // }
+        // else{
+        //     document.write("You are eligible for driving license.")
+        // }
+
+        let username1 = "admin"
+        let username2 = "rahul"
+
+        let username = prompt("Enter a username: ")
+        if (username == username1){
+            alert("welcome to admin dashboard")
+            let attendance = prompt("Enter attendance: ")
+            if (attendance == "Full"){
+                document.write("Staff has done full work")
+            }
+            else if (attendance=="Half"){
+                document.write("Staff has done half work")
+            }
+            else if (attendance == "Absent"){
+                document.write("Staff is absent.")
+            }
+            else{
+                document.write("Invalid")
+            }
+            
+        }
+        else if(username == username2){
+            alert("Welcome to rahul dashboard")
+        }
+        else{
+            document.write("Invalid username")
+        }
+    </script>
+</body>
+</html>
